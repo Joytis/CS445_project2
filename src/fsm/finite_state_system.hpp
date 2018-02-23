@@ -53,7 +53,7 @@ public:
 			transitions[source] = std::vector<transition>();
 		}
 		if(transitions.find(target) == transitions.end()) {
-			transitions[source] = std::vector<transition>();
+			transitions[target] = std::vector<transition>();
 		}
 		transition t(target, conditions);
 		transitions[source].push_back(std::move(t));

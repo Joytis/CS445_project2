@@ -17,10 +17,10 @@ robot_part::robot_part(color_tint tint, transform trans, vector3 joint, shape_ty
 	// define state transitions. . 
 	_fsm.add_transition(states::neutral, states::mouseover, triggers::lmouse_over);
 
-	_fsm.add_transition(states::mouseover, states::selected, triggers::lmouse_down);
 	_fsm.add_transition(states::mouseover, states::neutral, triggers::lmouse_not_over);
+	_fsm.add_transition(states::mouseover, states::selected, triggers::lmouse_down);
 
-	_fsm.add_transition(states::selected, states::mouseover, triggers::lmouse_up);
+	_fsm.add_transition(states::selected, states::neutral, triggers::lmouse_up);
 }
 
 void robot_part::add_child(robot_part&& part) {
@@ -43,42 +43,33 @@ void robot_part::update(float x, float y) {
 	// Use the matrix stack to determine whether or not we're intersecting with a point. 
 	glPushMatrix();
 
+	// Apply basic transform, then sit at center of joint. 
 	apply_basic_translations();
 
 	glPushMatrix();
 	_transform.apply_scale();
+	glTranslatef(_joint.x, _joint.y, _joint.z);
+	_transform.apply_inverse_scale();
+
 	// CHECK IF POINT IS WITHIN JOINT RANGE.  =================
 	GLfloat model[16]; 
 	glGetFloatv(GL_MODELVIEW_MATRIX, model); 
-	GLfloat point[4] = {_joint.x, _joint.y, _joint.z, 1};
+	GLfloat point[4];
 	// Multiply point by modelview matrix. 
-	point[0] = (point[0] * model[0*4 + 0]) + 
-			   (point[1] * model[1*4 + 0]) + 
-			   (point[2] * model[2*4 + 0]) + 
-			   (point[3] * model[3*4 + 0]);
-	point[1] = (point[0] * model[0*4 + 1]) + 
-			   (point[1] * model[1*4 + 1]) + 
-			   (point[2] * model[2*4 + 1]) + 
-			   (point[3] * model[3*4 + 1]);
-	point[2] = (point[0] * model[0*4 + 2]) + 
-			   (point[1] * model[1*4 + 2]) + 
-			   (point[2] * model[2*4 + 2]) + 
-			   (point[3] * model[3*4 + 2]);
-	point[3] = (point[0] * model[0*4 + 3]) + 
-			   (point[1] * model[1*4 + 3]) + 
-			   (point[2] * model[2*4 + 3]) + 
-			   (point[3] * model[3*4 + 3]);
+	point[0] = model[12 + 0]; // Transform position is what I want. 
+	point[1] = model[12 + 1]; // Transform position is what I want. 
+	point[2] = model[12 + 2]; // Transform position is what I want. 
+	point[3] = model[12 + 3]; // Transform position is what I want. 
 
 	float distance = sqrt(pow(point[0] - x, 2) + pow(point[1] - y, 2)); // pythagorean
 	if(distance <= (_dot_scale / 2)) 
 		_fsm.set_trigger(triggers::lmouse_over);
 	else 
 		_fsm.set_trigger(triggers::lmouse_not_over);
-
-	glPopMatrix(); // get rid of local scale
-
+	glPopMatrix();
 
 	_fsm.update();
+
 
 	// Define sate behavior. 
 	switch(_fsm.get_current_state()) {
@@ -147,9 +138,13 @@ void robot_part::draw_joints() {
 
 void robot_part::apply_basic_translations() {
 	_transform.apply_translate();
+	_transform.apply_scale();
 	glTranslatef(_joint.x, _joint.y, _joint.z);
+	_transform.apply_inverse_scale();
 	_transform.apply_rotation();
+	_transform.apply_scale();
 	glTranslatef(-_joint.x, -_joint.y, -_joint.z);
+	_transform.apply_inverse_scale();
 }
 
 
