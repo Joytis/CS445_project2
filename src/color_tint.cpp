@@ -6,6 +6,8 @@
 #include <GL/freeglut.h>
 #endif
 
+
+
 color_tint::color_tint() : _color(s_color(0.0, 0.0, 0.0)) {}
 color_tint::color_tint(float r, float g, float b) : _color(s_color(r, g, b)) {}
 
@@ -21,7 +23,7 @@ color_tint::color_tint(color_tint::colors c) {
 			break;
 
 		case color_tint::colors::yellow: 
-			_color = s_color(0.0, 1.0, 0.95);
+			_color = s_color(1.0, 0.95, 0.0);
 			break;
 
 		case color_tint::colors::green: 

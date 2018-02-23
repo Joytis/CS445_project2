@@ -30,6 +30,18 @@ void transform::apply_rotation() {
 void transform::apply_scale() {
 	glScalef(_scale.x, _scale.y, _scale.z); // scale
 }
+void transform::apply_inverse_scale() {
+	if(_scale.x != 0 || _scale.y != 0 || _scale.z != 0)
+		glScalef(1 / _scale.x, 1 / _scale.y, 1 / _scale.z); // scale
+}
+
+vector3 transform::get_position() { return _position; }
+vector3 transform::get_rotation() { return _rotation; }
+vector3 transform::get_scale() { return _scale; }
+
+void transform::set_position(vector3 pos) { _position = pos; }
+void transform::set_rotation(vector3 rot) { _rotation = rot; }
+void transform::set_scale(vector3 scl) { _scale = scl; }
 
 std::ostream& operator<<(std::ostream& os, const transform& t) {
 	os << "T: (" << t._position.x << ", " << t._position.y << ", " << t._position.z << ")" << std::endl;

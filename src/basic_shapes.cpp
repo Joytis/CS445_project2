@@ -11,14 +11,19 @@
 void basic_shapes::circle() {
 	// Draw circle of radius 1
 	glBegin(GL_TRIANGLE_FAN);
- 
- 	float radius = 0.5;
-	for (int i=0; i < 100; i++) {
-		float degInRad = (i * (360 / 100)) * (3.14159 / 180); // convert to radians. 
-		glVertex2f(cos(degInRad) * radius, sin(degInRad) * radius);
-	}
 
+	for (int i = 0; i < 180; i++)
+	{
+		float x = 0.5 * cos(i);
+		float y = 0.5 * sin(i);
+		glVertex2f(x, y);
+
+		x = 0.5 * cos(i + 0.1);
+		y = 0.5 * sin(i + 0.1);
+		glVertex2f(x, y);
+	}
 	glEnd();
+
 }
 
 void basic_shapes::square() {

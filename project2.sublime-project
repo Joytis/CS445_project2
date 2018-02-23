@@ -75,7 +75,8 @@
 		"cmake":
 		{
 			"build_folder": "${project_path}/build",
-			"generator": "Ninja"
+			"generator": "Visual Studio",
+			"env": { "CC": "clang-cl", "CXX": "clang-cl" },
 		}
 	}
 }

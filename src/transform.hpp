@@ -17,9 +17,18 @@ public:
 	void apply_translate();
 	void apply_rotation();
 	void apply_scale();
+	void apply_inverse_scale();
 	void apply_all();
 
 	void apply_gl_matrix();
+
+	vector3 get_position();
+	vector3 get_rotation();
+	vector3 get_scale();
+
+	void set_position(vector3 rot);
+	void set_rotation(vector3 rot);
+	void set_scale(vector3 rot);
 
 	friend std::ostream& operator<<(std::ostream& os, const transform& t);
 };

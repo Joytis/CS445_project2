@@ -1,3 +1,5 @@
+set(GLUT_INCLUDE_DIR "C:/includes")
+
 find_package(OpenGL REQUIRED)
 find_package(GLUT REQUIRED)
 

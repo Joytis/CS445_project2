@@ -19,6 +19,7 @@ glutscene* scene;
 void reshape(int w, int h)  {
     scene->reshape(w, h); 
 }
+
 void display()  {
     scene->display(); 
 }
@@ -58,6 +59,7 @@ int main(int argc, char *argv[]) {
     glutDisplayFunc(display);
     glutKeyboardFunc(keyboard);
     glutMouseFunc(mouse);
+    glutMotionFunc(motion);
     glutPassiveMotionFunc(motion);
     glutIdleFunc(idle);
 

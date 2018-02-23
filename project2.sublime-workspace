@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"apply",
+				"apply_color"
+			],
+			[
+				"draw",
+				"draw_joint\t(robot_part.cpp)"
+			],
+			[
+				"basic",
+				"basic_shapes.hpp\t(main.cpp)"
+			],
+			[
+				"tra",
+				"transform"
+			],
+			[
+				"tran",
+				"transform.hpp\t(robot_part.hpp)"
+			],
+			[
 				"shape",
 				"shape_type\t(robot_part.hpp)"
 			],
@@ -144,10 +164,6 @@
 				"newstate"
 			],
 			[
-				"draw",
-				"draw_state"
-			],
-			[
 				"trian",
 				"triangle\t(glutscene.hpp)"
 			],
@@ -234,10 +250,6 @@
 			[
 				"glutCreate",
 				"glutCreateWindow\t(interactiveTriangle.cpp)"
-			],
-			[
-				"tran",
-				"transition_away"
 			],
 			[
 				"target",
@@ -502,18 +514,6 @@
 			[
 				"truePo",
 				"truePosX"
-			],
-			[
-				"some",
-				"someComponent"
-			],
-			[
-				"legal",
-				"legalChunks"
-			],
-			[
-				"curren",
-				"currentAttack\t(PlayerController.cs)"
 			]
 		]
 	},
@@ -523,69 +523,9 @@
 			"file": "src/main.cpp",
 			"settings":
 			{
-				"buffer_size": 1623,
+				"buffer_size": 1571,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/glutscene.cpp",
-			"settings":
-			{
-				"buffer_size": 2155,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/robot/robot_part.hpp",
-			"settings":
-			{
-				"buffer_size": 487,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/glutscene.hpp",
-			"settings":
-			{
-				"buffer_size": 847,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/robot/color_tint.hpp",
-			"settings":
-			{
-				"buffer_size": 256,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/vector3.hpp",
-			"settings":
-			{
-				"buffer_size": 128,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/robot/transform.hpp",
-			"settings":
-			{
-				"buffer_size": 304,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "project2.sublime-project",
-			"settings":
-			{
-				"buffer_size": 1360,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
 			}
 		}
 	],
@@ -709,15 +649,79 @@
 		"selected_items":
 		[
 			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"git:",
+				"Git: Graph Current File"
+			],
+			[
+				"diff",
+				"Git: Diff Current File"
+			],
+			[
+				"git",
+				"Git: Diff Tool All"
+			],
+			[
+				"git push",
+				"Git: Push Tags"
+			],
+			[
+				"git an",
+				"Git: Amend Commit"
+			],
+			[
+				"git anno",
+				"Git: Toggle Annotations"
+			],
+			[
+				"git pull ",
+				"Git: Pull Current Branch"
+			],
+			[
+				"git fetch",
+				"Git: Fetch"
+			],
+			[
+				"git track",
+				"Git: Track Remote Branch"
+			],
+			[
+				"git remote",
+				"Git: Track Remote Branch"
+			],
+			[
+				"commit",
+				"Git: Commit"
+			],
+			[
+				"git add",
+				"Git: Add All"
+			],
+			[
+				"git init",
+				"Git: Init"
+			],
+			[
+				"new",
+				"File: New File Relative to Current View"
+			],
+			[
 				"Write",
 				"CMakeBuilder: Write Build Targets to Sublime Project File"
 			],
 			[
 				"nre",
-				"File: New File Relative to Current View"
-			],
-			[
-				"new",
 				"File: New File Relative to Current View"
 			],
 			[
@@ -741,16 +745,8 @@
 				"Package Control: Disable Package"
 			],
 			[
-				"remove",
-				"Package Control: Remove Package"
-			],
-			[
 				"SublimeLinter",
 				"Preferences: SublimeLinter Settings"
-			],
-			[
-				"install",
-				"Package Control: Install Package"
 			],
 			[
 				"rena",
@@ -947,28 +943,40 @@
 	"expanded_folders":
 	[
 		"/C/Users/Clark/Documents/Programming/School/CS545/project2",
-		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src"
+		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/fsm"
 	],
 	"file_history":
 	[
-		"/C/Users/Clark/Documents/Programming/School/CS545/project2/CMakeLists.txt",
-		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/CMakeLists.txt",
-		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/glutscene.hpp",
-		"/C/Users/Clark/Documents/Programming/School/CS545/project2/include/GL/freeglut_ext.h",
+		"/C/Users/Clark/AppData/Roaming/Sublime Text 3/Packages/Alignment/Base File.sublime-settings",
 		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/basic_shapes.cpp",
-		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/robot/robot_part.cpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/color_tint.cpp",
 		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/main.cpp",
+		"/C/Users/Clark/AppData/Roaming/Sublime Text 3/Packages/SublimeCodeIntel/SublimeCodeIntel.sublime-settings",
+		"/C/Users/Clark/AppData/Roaming/Sublime Text 3/Packages/User/SublimeCodeIntel.sublime-settings",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/glutscene.hpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/glutscene.cpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/color_tint.hpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/robot_part.cpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/transform.cpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/transform.hpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/robot_part.hpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project2/.gitignore",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project2/project2.sublime-project",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/CMakeLists.txt",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/vector3.hpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/color.hpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/basic_shapes.hpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/fsm/enum_class_bitmasks.hpp",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project2/CMakeLists.txt",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project2/include/GL/freeglut_ext.h",
+		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/robot/robot_part.cpp",
 		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/robot/transform.hpp",
 		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/robot/color_tint.hpp",
 		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/robot/color_tint.cpp",
-		"/C/Users/Clark/Documents/Programming/School/CS545/project2/project2.sublime-project",
 		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/robot/robot_part.hpp",
-		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/color.hpp",
-		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/vector3.hpp",
-		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/basic_shapes.hpp",
 		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/robot/joint.hpp",
 		"/C/Users/Clark/Documents/Programming/School/CS545/project1/src/glutscene.cpp",
-		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/glutscene.cpp",
 		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/basic_shapes/rectangle.cpp",
 		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/basic_shapes/basic_shapes.hpp",
 		"/C/Users/Clark/Documents/Programming/School/CS545/project2/src/drawers/simple_point_drawer.hpp",
@@ -1067,18 +1075,7 @@
 		"/C/Users/Clark/Documents/Programming/Projects/main_game/Assets/Scripts/Game/Player/PlayerController_DashStates.cs",
 		"/C/Users/Clark/Documents/Programming/Projects/main_game/Assets/Scripts/Game/Player/PlayerController_AttackStates.cs",
 		"/C/Users/Clark/Documents/Programming/Projects/main_game/Assets/Scripts/Game/GameController.cs",
-		"/C/Users/Clark/Documents/Programming/Projects/main_game/Assets/Editor/Windows/LevelInfoWindow.cs",
-		"/C/Users/Clark/Documents/Programming/Projects/main_game/Assets/Scripts/LWG/CameraShake2D.cs",
-		"/C/Users/Clark/Documents/Programming/Projects/main_game/Assets/Scripts/LWG/ScreenShake.cs",
-		"/C/Users/Clark/Documents/Programming/Projects/main_game/Assets/Scripts/Game/GUI/HealthBarController.cs",
-		"/C/Users/Clark/Documents/Programming/Projects/main_game/Assets/Scripts/Game/GameConstants.cs",
-		"/C/Users/Clark/Documents/Programming/Projects/main_game/Assets/Scripts/Game/ProcGen/Node.cs",
-		"/C/Users/Clark/Documents/Programming/Projects/main_game/Assets/Scripts/Game/FacingDirection.cs",
-		"/C/Users/Clark/Documents/Programming/Projects/main_game/Assets/Scripts/Game/ProcGen/Dungeon.cs",
-		"/C/Users/Clark/Documents/Programming/Projects/main_game/Assets/Rewired/Extras/ControlMapper/Scripts/Editor/ControlMapperInspector.cs",
-		"/C/Users/Clark/Documents/Programming/Projects/main_game/Assets/Scripts/Game/ProcGen/DungeonGenerator.cs",
-		"/C/Users/Clark/AppData/LocalLow/DefaultCompany/mini_clungeons/ProcLogs.txt",
-		"/C/Users/Clark/Documents/Programming/Projects/main_game/Assets/Scripts/Game/ProcGen/ChunkGrid.cs"
+		"/C/Users/Clark/Documents/Programming/Projects/main_game/Assets/Editor/Windows/LevelInfoWindow.cs"
 	],
 	"find":
 	{
@@ -1096,6 +1093,24 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"0.2",
+			"0.2f",
+			"0.95f",
+			"_scale",
+			"_position",
+			"_color",
+			"_tint",
+			"apply_color",
+			"case",
+			"circle",
+			"void",
+			"_scale",
+			"0.0",
+			"1.0",
+			"pos",
+			"_pos",
+			"pos",
+			"0.0",
 			"1",
 			"0f",
 			"5f",
@@ -1140,7 +1155,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -1149,112 +1164,22 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1623,
+						"buffer_size": 1571,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								781,
-								781
+								345,
+								345
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/C++/C++.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 480.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "src/glutscene.cpp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2155,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2101,
-								2101
-							]
-						],
-						"settings":
-						{
-							"history_list_is_closing": true,
-							"open_with_edit": true,
 							"syntax": "Packages/C++/C++.sublime-syntax",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "src/robot/robot_part.hpp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 487,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								354,
-								354
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C++.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "src/glutscene.hpp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 847,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								415,
-								415
-							]
-						],
-						"settings":
-						{
-							"history_list_is_closing": true,
-							"open_with_edit": true,
-							"syntax": "Packages/C++/C++.sublime-syntax",
-							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1262,190 +1187,12 @@
 					},
 					"stack_index": 0,
 					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "src/robot/color_tint.hpp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 256,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C++.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "src/vector3.hpp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 128,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C++.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "src/robot/transform.hpp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 304,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C++.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "project2.sublime-project",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1360,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1337,
-								1337
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/zzz A File Icon zzz/aliases/JSON (Sublime).sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 14.0,
-						"translation.y": 625.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
 				}
 			]
 		},
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 3,
-					"file": "src/glutscene.hpp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 847,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"history_list_is_closing": true,
-							"open_with_edit": true,
-							"syntax": "Packages/C++/C++.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "src/glutscene.cpp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2155,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								217,
-								217
-							]
-						],
-						"settings":
-						{
-							"history_list_is_closing": true,
-							"open_with_edit": true,
-							"syntax": "Packages/C++/C++.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -1507,6 +1254,10 @@
 	{
 		"height": 0.0
 	},
+	"output.git":
+	{
+		"height": 336.0
+	},
 	"pinned_build_system": "project2 (Windows)",
 	"project": "project2.sublime-project",
 	"replace":
@@ -1521,28 +1272,72 @@
 		"selected_items":
 		[
 			[
-				"glut",
-				"src\\glutscene.hpp"
+				"main",
+				"src\\main.cpp"
+			],
+			[
+				"git",
+				".gitignore"
 			],
 			[
 				"robot",
-				"src\\robot\\robot_part.hpp"
+				"src\\robot_part.hpp"
 			],
 			[
-				"vec",
-				"src\\vector3.hpp"
+				"basic",
+				"src\\basic_shapes.cpp"
+			],
+			[
+				"glut",
+				"src\\glutscene.cpp"
+			],
+			[
+				"trans",
+				"src\\transform.cpp"
+			],
+			[
+				"tran",
+				"src\\transform.cpp"
 			],
 			[
 				"tra",
-				"src\\robot\\transform.hpp"
+				"src\\transform.hpp"
+			],
+			[
+				"robo",
+				"src\\robot_part.cpp"
+			],
+			[
+				"transform",
+				"src\\transform.cpp"
+			],
+			[
+				"part",
+				"src\\robot_part.cpp"
+			],
+			[
+				"color",
+				"src\\color_tint.cpp"
+			],
+			[
+				"glutsc",
+				"src\\glutscene.cpp"
+			],
+			[
+				"Cmake",
+				"src\\CMakeLists.txt"
+			],
+			[
+				"transf",
+				"src\\transform.hpp"
 			],
 			[
 				"vector",
 				"src\\vector3.hpp"
 			],
 			[
-				"color",
-				"src\\robot\\color_tint.hpp"
+				"vec",
+				"src\\vector3.hpp"
 			],
 			[
 				"rb",
@@ -1551,14 +1346,6 @@
 			[
 				"",
 				"src\\glutscene.hpp"
-			],
-			[
-				"main",
-				"src\\main.cpp"
-			],
-			[
-				"Cmake",
-				"src\\CMakeLists.txt"
 			],
 			[
 				"proj",
@@ -1581,20 +1368,8 @@
 				"src\\robot\\color_tint.cpp"
 			],
 			[
-				"trans",
-				"src\\robot\\transform.hpp"
-			],
-			[
 				"colo",
 				"src\\robot\\color_tint.hpp"
-			],
-			[
-				"basic",
-				"src\\basic_shapes.cpp"
-			],
-			[
-				"tran",
-				"src\\robot\\transform.hpp"
 			],
 			[
 				"joint",
@@ -1725,10 +1500,6 @@
 				"project1.sublime-project"
 			],
 			[
-				"git",
-				".gitignore"
-			],
-			[
 				"GL",
 				"src\\glutscene.cpp"
 			],
@@ -1759,10 +1530,6 @@
 			[
 				"cmake",
 				"CMakeLists.txt"
-			],
-			[
-				"glutsc",
-				"src\\glutscene.cpp"
 			],
 			[
 				"draw",
@@ -2015,22 +1782,6 @@
 			[
 				"AttackStates",
 				"Assets\\Scripts\\Game\\Player\\PlayerController_AttackStates.cs"
-			],
-			[
-				"DashState",
-				"Assets\\Scripts\\Game\\Player\\PlayerController_DashStates.cs"
-			],
-			[
-				"InputFo",
-				"Assets\\Scripts\\Game\\Player\\InputForgiver.cs"
-			],
-			[
-				"State",
-				"Assets\\Scripts\\Game\\Player\\PlayerController_StateStructs.cs"
-			],
-			[
-				"MoveStae",
-				"Assets\\Scripts\\Game\\Player\\PlayerController_MoveStates.cs"
 			]
 		],
 		"width": 0.0
